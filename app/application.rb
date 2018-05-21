@@ -30,7 +30,7 @@ class Application
 binding.pry
     if req.path.match(/add/)
       @@items.each do |item|
-        #binding.pry
+        binding.pry
         if @@items.include?(item)
           resp.write "We don't have that item"
           #binding.pry
