@@ -31,12 +31,11 @@ class Application
     if req.path.match(/add/)
       @@items.each do |item|
         #binding.pry
-        if @@items.include?(item)
-          @@cart << item
-          resp.write "added #{item}"
-          binding.pry
-        else
+        if !@@items.include?(item)
           resp.write "We don't have that item"
+          binding.pry
+        # else
+        #   resp.write "We don't have that item"
         end
       end
     end
