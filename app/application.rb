@@ -33,7 +33,7 @@ class Application
         #binding.pry
         if !@@items.include?(item)
           resp.write "We don't have that item"
-          binding.pry
+          #binding.pry
         # else
         #   resp.write "We don't have that item"
         end
