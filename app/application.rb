@@ -27,7 +27,7 @@ class Application
         resp.write "#{item}\n"
       end
     end
-binding.pry
+#binding.pry
     if req.path.match(/add/)
       @@items.each do |item|
         binding.pry
