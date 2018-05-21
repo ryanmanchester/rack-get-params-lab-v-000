@@ -27,11 +27,11 @@ class Application
         resp.write "#{item}\n"
       end
     end
-
+binding.pry
     if req.path.match(/add/)
       @@items.each do |item|
         #binding.pry
-        if !@@items.include?(item)
+        if @@items.include?(item)
           resp.write "We don't have that item"
           #binding.pry
         # else
